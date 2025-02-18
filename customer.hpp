@@ -9,5 +9,6 @@ class Customer{
     Customer(int order, Location &l);
     void setOrder(int order);    
     int getOrder();
+    const Location& getLocation()const;
 };
 #endif

@@ -25,7 +25,8 @@ class Location{
     /**
      * @brief prints a list of the neighbour id's and their co-ordinates
      */
-    const vector<pair<int, double>>& getNeighbours();
+    const vector<pair<int, double>>& getNeighbours()const;
+    int getId()const;
 };
 
 #endif

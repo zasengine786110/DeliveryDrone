@@ -8,6 +8,10 @@ void Location::addNeighbour(int id, int distance){
     neighbours.push_back({id, distance});
 }
 
-const vector <pair<int,double>>& Location::getNeighbours(){
+const vector <pair<int,double>>& Location::getNeighbours()const{
     return neighbours;
+}
+
+int Location::getId()const{
+    return id;
 }

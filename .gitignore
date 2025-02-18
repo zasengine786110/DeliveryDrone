@@ -1,3 +1,5 @@
 Doxyfile
 docs/html/*
 !docs/html/index.html
+vscode/
+.gitignore
