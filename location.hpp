@@ -4,8 +4,8 @@
  * @author Zaheer Sidik
  * @date 2025-02-16
  */
-#ifndef __location__
-#define __location__
+#ifndef LOCATION_HPP
+#define LOCATION_HPP
 #include <vector>
 
 
@@ -18,8 +18,7 @@ class Location{
      /**
      * @brief Adds a location to the delivery route and specifies the neighbours, note that neighbours are defined as adjacent locations that are reachable from the given location..
      * @param id The id of the location.
-     * @param x X co ordinate of the location
-     * @param y Y co ordinate of the location
+     * @param distance The distance to the neighbouring location from the current location
      */
     void addNeighbour(int id, int distance);
     /**

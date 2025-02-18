@@ -1,12 +1,10 @@
 #include "drone.hpp"
-#include "graph.hpp"
-#include "graph.cpp"
-
 #include <iostream>
 #include <queue>
 #include <vector>
 #include <limits>
 #include <algorithm>
+
 using namespace std;
 
 DeliveryDrone::DeliveryDrone(int capacity, Location& store) : capacity(capacity), store(store) {}

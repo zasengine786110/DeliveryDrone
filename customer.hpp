@@ -3,10 +3,9 @@
  * @brief Header file for the Customer class.
  */
 
-#ifndef __customer__
-#define __customer__
+#ifndef CUSTOMER_HPP
+#define CUSTOMER_HPP
 
-#include "location.cpp"
 #include "location.hpp"
 
 /**

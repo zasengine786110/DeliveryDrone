@@ -4,6 +4,8 @@
 using namespace std;
 
 Graph::Graph(){};
+Graph::Graph(vector <Customer> &customers ) : customers(customers) {};
+
 
 void Graph::addCustomer(Customer &c){
         customers.push_back(c);

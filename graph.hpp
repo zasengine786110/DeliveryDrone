@@ -5,13 +5,11 @@
  * This file contains the definition of the Graph class, which manages a collection of Customer objects.
  */
 
-#ifndef __graph__
-#define __graph__
+#ifndef GRAPH_HPP
+#define GRAPH_HPP
 
-#include "location.cpp"
 #include "location.hpp"
 #include "customer.hpp"
-#include "customer.cpp"
 
 using namespace std;
 
@@ -23,11 +21,12 @@ using namespace std;
  */
 class Graph {
 public:
+    vector<Customer> customers; /**< A vector to store the customers in the graph. */
+    Graph();
     /**
      * @brief Default constructor for the Graph class.
      */
-    Graph() {};
-
+    Graph(vector <Customer> &c);
     /**
      * @brief Adds a customer to the graph.
      * 
@@ -49,8 +48,7 @@ public:
      */
     const vector<Customer>& getCustomers() const;
 
-private:
-    vector<Customer> customers; /**< A vector to store the customers in the graph. */
+     
 };
 
 #endif

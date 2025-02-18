@@ -7,13 +7,11 @@
  * finding the shortest path using Dijkstra's algorithm.
  */
 
-#ifndef __drone__
-#define __drone__
-
+#ifndef DRONE_HPP
+#define DRONE_HPP
+#include "location.hpp"
 #include "customer.hpp"
 #include "graph.hpp"
-#include "graph.hpp"
-#include "graph.cpp"
 #include <vector>
 using namespace std;
 
